@@ -1,0 +1,17 @@
+# FEC
+N = 10
+K = 5
+max_fec_data_size = 2000
+decode_buffer_num = 1024
+
+# Network
+max_udp_buffer_size = 4000
+api_local = 0.0.0.0:6661
+tun_local = 0.0.0.0:6662
+reporter_local = 0.0.0.0:6660
+paths = localhost:6662
+seq2addr = 0
+
+# Performance
+processor_num = 10
+mq_capacity = 4096

@@ -1,0 +1,5 @@
+tun_tap_name = nt-tun0
+tun_tap_buffer_size = 5000
+
+local = 0.0.0.0:6001
+tunnel = 127.0.0.1:6661

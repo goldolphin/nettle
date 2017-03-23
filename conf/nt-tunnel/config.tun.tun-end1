@@ -1,0 +1,31 @@
+# FEC
+N = 10
+K = 6
+max_fec_data_size = 2000
+decode_buffer_num = 40000
+
+## in ms, default is 2000
+decode_timeout = 2000
+
+# Network
+max_udp_buffer_size = 4000
+api_local = 0.0.0.0:6661
+tun_local = 0.0.0.0:6662
+reporter_local = 0.0.0.0:6660
+echo_local = 0.0.0.0:6663
+
+## true if missing
+enable_fec = true
+
+## false if missing
+enable_direct = false
+
+paths = local_ip1:port-remote_ip:port,local_ip2:port-remote_ip:port
+seq2addr = 0,3;1,3;2,3;0,3;1,3;2,3;0;1;2;0
+
+# Performance
+processor_num = 10
+mq_capacity = 4096
+
+# Misc
+log_priority = ALL
